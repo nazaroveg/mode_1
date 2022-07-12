@@ -1,0 +1,3 @@
+﻿  mode_01.cpp
+C:\Users\newya\source\repos\mode_01\mode_01.cpp(9,1): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  mode_01.vcxproj -> C:\Users\newya\source\repos\mode_01\x64\Debug\mode_01.exe
