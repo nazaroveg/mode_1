@@ -30,8 +30,12 @@ int main()
 {
 	setlocale(LC_ALL, "RUS");
 
-
-
+     #if !defined mode
+	{
+		std::cout << "Нет режима: MODE";
+		return -1;
+	}
+    #endif
 
 
     #if mode == '0'
@@ -51,7 +55,7 @@ int main()
 
     #endif
 
-
+  
 
 	return 0;
 }
