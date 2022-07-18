@@ -2,13 +2,13 @@
 
 #include <iostream>
 
-#define mode '1'    //; не нужно
+#define mode '0'    //; не нужно
+
+
 
 
 
 #ifdef mode '1'
-
-
 
 void add()
 {
@@ -26,16 +26,25 @@ void add()
 
 
 
+
 int main()
 {
 	setlocale(LC_ALL, "RUS");
+     
 
-     #if !defined mode
+	#if !defined mode   //если нет "mode" ишибка при сборке где "error"
 	{
-		std::cout << "Нет режима: MODE";
-		return -1;
+		#error no mode  
 	}
-    #endif
+	#endif
+
+//#if !defined mode
+//	{
+//		std::cout << "Нет режима: MODE";  // так ошибки нет
+//		return -1;
+//	}
+//#endif
+
 
 
     #if mode == '0'
