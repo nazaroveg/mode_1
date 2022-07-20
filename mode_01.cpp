@@ -4,15 +4,15 @@
 
 #define mode 1  
 
-#if !defined mode  
-	{
+#ifndef mode  
+	
 #error no mode  
-	}
+	
 #endif
 
 
 
-#ifdef mode == 1
+#if mode == 1
 
 void add()
 {
